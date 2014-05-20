@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>My Robot App</h1>
+    <input id="name" type="text" placeholder="Enter robot name" />
+    <input id="metal" type="text" placeholder="Enter metal type" />
+    <input id="img" type="text" placeholder="Enter img url" />
+    <button onclick="RobotApp.makeRobot()" class="btn">Submit Robot</button><br /><br />
+    <table>
+        <thead>
+            <tr>
+                <th><h3>Name</h3></th>
+                <th><h3>Metal</h3></th>
+                <th><h3>Image</h3></th>
+                <th><select onchange="RobotApp.sort()" id="sort"><option value="name">Order By Name</option><option value="metal">Order by Metal</option></select></th>
+                <th><select onchange="RobotApp.sort()" id="order"><option value="ascending">Ascending</option><option value="descending">Descending</option></select></th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿body {
+}
+h1 {
+    text-align: center;
+}
+td {
+    width: 33%;
+}
+table {
+    width: 80%;
+}
+td img {
+    width: 70px;
+    height: 70px;
+}
